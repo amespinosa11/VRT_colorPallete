@@ -3,62 +3,59 @@
 
 <head>
 	<title> Awesome color palette generator </title>
-	<script src="script.js"></script>
-	<script src="colors.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="styles.css" type="text/css" rel="stylesheet">
-
-	
-	
 </head>
 	<body>
-	
+	<div class="container">
 		<div id ="colors-viewer">
-			<h2> Paleta de colores </h2> 
+			<h2 class="my-3"> Paleta de colores </h2> 
 			
-			<div id="color1" class="color-view">
-			Fondo p&aacute;gina
+			<div class="row">
+				<div id="color1" class="color-view col-sm-4 col-xl-2">
+				Fondo p&aacute;gina
+				</div>
+				
+				<div id="color2" class="color-view col-sm-4 col-xl-2">
+				Texto elementos
+				</div>
+				
+				<div id="color3" class="color-view col-sm-4 col-xl-2">
+				Borde elementos
+				</div>
+				
+				<div id="color4" class="color-view col-sm-4 col-xl-2">
+				Fondo elementos
+				</div>
+				
+				<div id="color5" class="color-view col-sm-4 col-xl-2">
+				Texto encabezado
+				</div>
 			</div>
 			
-			<div id="color2" class="color-view">
-			Texto elementos
-			</div>
-			
-			<div id="color3" class="color-view">
-			Borde elementos
-			</div>
-			
-			<div id="color4" class="color-view">
-			Fondo elementos
-			</div>
-			
-			<div id="color5" class="color-view">
-			Texto encabezado
-			</div>
 		</div>
 
 
-		<div id ="css-rules-div">
-			<h2> Reglas CSS</h2> 
+		<div id ="css-rules-div" class="my-5">
+			<h2 class="my-3"> Reglas CSS</h2> 
 			<textarea id="css-rules" class="rules"> 
-.website-background{ color: #FFFFFF;}
-
-.element-text{ color: #FFFFFF;}
-
-.element-border{ border-color: #FFFFFF;}
-
-.element-background{ background-color: #FFFFFF;}
-
-.header{ color: #FFFFFF;}
 			</textarea>
 		</div>
 		
 		
-		<div id="actions">
-			<button> Generar nueva paleta</button>
-			<button> Limpiar paleta</button>
+		<div id="actions" class="mt-4">
+			<button class="btn btn-secondary" id="nuevaPaleta"> Generar nueva paleta</button>
+			<button class="btn btn-secondary" id="limpiarPaleta"> Limpiar paleta</button>
 		</div>
+	</div>
+
+		<script src="script.js"></script>
+		<script src="colors.js"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</body>
 
 </html>
